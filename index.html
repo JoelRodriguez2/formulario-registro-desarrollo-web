@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="style.css"> <!-- con esto, el html y el css estan vinculados-->
+</head>
+<body>
+
+  <h2>Formulario de Registro</h2>
+
+  <form action="/registro" method="post"> <!-- el termino form define el formulario -->
+                                          <!-- action="/registro" esla URL a la que se enviarán los datos -->
+                                           <!--indica que los datos se enviarán mediante POST -->
+    <label for="nombre">Usuario:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br> <!-- el termino required obliga a llenar los campos antes de enviar-->
+
+    <label for="correo">Correo:</label><br>
+    <input type="email" id="correo" name="correo" required><br><br>
+
+    <label for="contrasena">Contraseña:</label><br>
+    <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+    <input type="submit" value="Registrarse">
+  </form>
+
+<script src="script.js"></script>
+</body>
+</html>
